@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="ExampleDesktop Installer" Language="1033" Version="1.0.0.0" Manufacturer="HOO YING KIT" UpgradeCode="811b7dee-7af2-4670-b93b-2cd1cac9742f">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="WixExample" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="My Installer Example" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="ExampleDesktop.exe" Guid="5B7BF2D0-FAF0-4302-9910-830415D19F58">
+				<File Id="ExampleDesktop.exe" Name="ExampleDesktop.exe" Source="$(var.ExampleDesktop.TargetDir)ExampleDesktop.exe" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
