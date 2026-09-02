@@ -1,0 +1,9 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+			<Component Id="ExampleDesktop.exe" Guid="327B464B-541A-4245-9643-3AF2EB38DFAE">
+				<File Id="ExampleDesktop.exe" Name="ExampleDesktop.exe" Source="$(var.ExampleDesktop.TargetDir)ExampleDesktop.exe" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
