@@ -1,0 +1,22 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="AppComponents" Directory="INSTALLFOLDER">
+
+			<!-- 1. Main Executable -->
+			<Component>
+				<File Source="..\BMIHealthTracker\bin\Release\BMIHealthTracker.exe" />
+			</Component>
+
+			<!-- 2. Custom DLL 1 Dependency (BmiCalculatorLib.dll) -->
+			<Component>
+				<File Source="..\BMIHealthTracker\bin\Release\BmiCalculatorLib.dll" />
+			</Component>
+
+			<!-- 3. Custom DLL 2 Dependency (HealthAdviceLib.dll) -->
+			<Component>
+				<File Source="..\BMIHealthTracker\bin\Release\HealthAdviceLib.dll" />
+			</Component>
+
+		</ComponentGroup>
+	</Fragment>
+</Wix>
