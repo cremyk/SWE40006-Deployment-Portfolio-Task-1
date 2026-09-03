@@ -93,5 +93,10 @@ namespace BMIHealthTracker
                 MessageBox.Show("Error: " + ex.Message, "Execution Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtResults_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

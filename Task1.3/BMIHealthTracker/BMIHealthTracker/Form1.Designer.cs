@@ -103,7 +103,6 @@
             this.txtResults.Size = new System.Drawing.Size(312, 159);
             this.txtResults.TabIndex = 7;
             this.txtResults.Text = "";
-            this.txtResults.TextChanged += new System.EventHandler(this.txtResults_TextChanged);
             // 
             // Form1
             // 
