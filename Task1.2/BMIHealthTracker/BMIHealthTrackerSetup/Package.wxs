@@ -1,0 +1,13 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package Name="BMI Health Tracker"
+			 Manufacturer="Hoo Ying Kit"
+			 Version="1.0.0.0"
+			 UpgradeCode="9C0E89E4-D87B-48CB-A8C5-AAF1BF32E3E6">
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+
+		<Feature Id="Main">
+			<ComponentGroupRef Id="AppComponents" />
+		</Feature>
+	</Package>
+</Wix>
