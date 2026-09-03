@@ -21,17 +21,17 @@ SWE40006-Deployment-Portfolio-Task-1/
 ├── Task1.3/                           # Task 1.3 (Distinction Level)
 │   └── BMIHealthTracker/              # Multi-DLL Modular Desktop Architecture
 │       ├── BMIHealthTracker/          # Main WinForms UI Project
-│       ├── BmiCalculatorLib/          # Custom DLL 1: Mathematical Calculation Library
-│       ├── HealthAdviceLib/           # Custom DLL 2: Clinical Diagnostics Library
+│       ├── BmiCalculatorLib/          # DLL 1: Mathematical Calculation Library
+│       ├── HealthAdviceLib/           # DLL 2: Clinical Diagnostics Library
 │       └── BMIHealthTrackerSetup/     # WiX Installer Bundling EXE + Both DLL Dependencies
 │
 ├── Task1.4/                           # Task 1.4 (High Distinction Level)
 │   └── BMIHealthTracker/              # Full Solution with Store Packaging
-│       ├── BMIHealthTrackerPackage/   # Windows Application Packaging Project (MSIX/AppX)
+│       ├── BMIHealthTrackerPackage/   # Windows Application Packaging Project 
 │       └── ...                        # Multi-DLL Core Engine Projects
 │
-├── .gitignore                         # Visual Studio Standard Ignore File
-└── README.md                          # Repository Documentation & Verification Index
+├── .gitignore                        
+└── README.md                          
 ```
 
 ---
