@@ -1,12 +1,11 @@
-# SWE40006 Software Deployment and Evolution
 ## Deployment Activity 1: Desktop Deployment using WiX Toolset & Microsoft Store Packaging
 
-## 📌 Project Overview
+## Project Overview
 This repository contains the complete implementation for Deployment Activity 1, demonstrating the deployment lifecycle of a Windows desktop application. The project showcases a custom C# Windows Forms application (BMI Health Tracker) modularized with multiple custom DLL dependencies, packaged into an enterprise Windows Installer (.msi) using the modern WiX Toolset, and containerized for modern Windows Store distribution using the Windows Application Packaging Project.
 
 ---
 
-## 📁 Repository Directory Structure
+## Repository Directory Structure
 
 ```text
 SWE40006-Deployment-Portfolio-Task-1/
@@ -33,8 +32,11 @@ SWE40006-Deployment-Portfolio-Task-1/
 │
 ├── .gitignore                         # Visual Studio Standard Ignore File
 └── README.md                          # Repository Documentation & Verification Index
+```
 
-## 🛠️ Technology Stack & Tools Used
+---
+
+## Technology Stack & Tools Used
 
 | Category | Technology / Tool | Version / Specification | Purpose |
 | :--- | :--- | :--- | :--- |
