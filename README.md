@@ -1,6 +1,11 @@
 # SWE40006 Software Deployment and Evolution
 ## Deployment Activity 1: Desktop Deployment using WiX Toolset & Microsoft Store Packaging
 
+## 📌 Project Overview
+This repository contains the complete implementation for Deployment Activity 1, demonstrating the deployment lifecycle of a Windows desktop application. The project showcases a custom C# Windows Forms application (BMI Health Tracker) modularized with multiple custom DLL dependencies, packaged into an enterprise Windows Installer (.msi) using the modern WiX Toolset, and containerized for modern Windows Store distribution using the Windows Application Packaging Project.
+
+---
+
 ## 📁 Repository Directory Structure
 
 ```text
@@ -28,3 +33,15 @@ SWE40006-Deployment-Portfolio-Task-1/
 │
 ├── .gitignore                         # Visual Studio Standard Ignore File
 └── README.md                          # Repository Documentation & Verification Index
+
+## 🛠️ Technology Stack & Tools Used
+
+| Category | Technology / Tool | Version / Specification | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Language & Runtime** | C# / .NET Framework | .NET Framework 4.8 | Core application logic, GUI, and Class Libraries |
+| **Development IDE** | Microsoft Visual Studio | 2022 Community (v17.x) | Solution management, compilation, and debugging |
+| **Deployment Engine** | WiX Toolset & HeatWave | WiX v4.0 / HeatWave VS Extension | XML authoring (`.wxs`) and native `.msi` package creation |
+| **Modern Packaging** | Windows App Packaging Project | Desktop Bridge (MSIX / AppX) | Modern Store containerization and local sideloading |
+| **Security & Signing** | X.509 Digital Certificate | SHA-256 Self-Signed (`.cer`) | Package integrity validation and local certificate trust |
+| **Target Platform** | Windows OS | Windows 10 / Windows 11 (`x64`) | Target deployment and execution environment |
+| **Version Control** | Git & GitHub | Git / GitHub Desktop | Source code hosting and public deployment verification |
